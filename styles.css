@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    /* Font-Family: 'Lato', Sans-Serif;
+    Font-Size: 46px; */
+    Font-Family: 'Catamaran', Sans-Serif;
+    Font-Size: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* header section */
+
+header {
+    width: 100%;
+    height: 600px;
+    background-image: url('https://images.ctfassets.net/4f3rgqwzdznj/2bn4hHzZZfg5WhOzAach9V/888a1ec38099344149382ca5d35e8bfb/marijuana_leaf_in_beer_glass-1161224925.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2d551b;
+    margin: 24px 43px;
+    width: 80%;
+    padding: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.title {
+    margin-top: 10%;
+    text-align: center;
+    color: #fff;
+}
+
+.title h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+/* general content section */
+
+.content {
+    margin-top: 2em;
+} 
+
+/* about us section */
+.about-us {
+    max-width: 62.5em;
+    width: 100%;
+    margin: 2em auto;
+    padding: 2em;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.about-us p {
+    line-height: 2;
+    font-size: 1.375em;
+}
+
+
+/* the reciew section */
+
+.reviews {
+    width: 100%;
+    padding: 5em;
+    background-color: #2d551b;
+    text-align: center;
+    font-size: 1.56em;
+    color: #fff;
+}
+
+.reviews span {
+    font-family: 'Lato', sans-serif;
+}
+
+/* this ection is catered for the slides */
+
+.mySlides {
+    display: none;  
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 600px;
+}
+
+/* the image gallery container */
+
+.img-gallery {
+    max-width: 62.5em;
+    width: 100%;
+    margin: 2em auto;
+    position: relative;
+}
+
+
+
+/* captions text */
+.text {
+    font-size: 1em;
+    padding: .5em .75em;
+    position: absolute;
+    bottom: 4em;
+    width: 100%;
+    text-align: center;
+}
+
+/* the nuber text from 1 / 3 */
+.numbertext {
+    /* color: ; */
+    font-size: .75em;
+    padding: .5em .75em;
+    position: absolute;
+    top: 0%;
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    margin: 1em 0.125em;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .5s ease-in-out;
+}
+
+.active {
+    background-color: #2d551b;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .6;}
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* media queries */
+
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 50%;
+        height: 300px;
+    }
+
+    h1, h2 h5 {
+        font-size: 1em;
+        padding: 1em;
+    }
+}
